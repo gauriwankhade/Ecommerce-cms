@@ -1,0 +1,15 @@
+1) Big O, Arrays and Strings: 
+	
+	https://medium.com/swlh/oneyearcodingplan-big-o-arrays-and-strings-7f4f91247f82
+
+2) Linked Lists: 
+
+	https://levelup.gitconnected.com/oneyearcodingplan-linkedlists-ec495b220ca6
+
+3) Stacks and Queues: 
+
+	https://medium.com/@anjaliviramgama/oneyearcodingplan-stacks-queues-239024ae8d04
+
+4) Trees and Tries:
+
+	https://anjaliviramgama.medium.com/oneyearcodingplan-trees-and-tries-33e75cda7753

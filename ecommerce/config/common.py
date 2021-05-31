@@ -24,6 +24,8 @@ class Common(Configuration):
 
         # Your apps
         'ecommerce.users',
+        'ecommerce.inventory',
+        'ecommerce.checkout',
 
     )
 

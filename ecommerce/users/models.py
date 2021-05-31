@@ -20,3 +20,18 @@ class User(AbstractUser):
 def create_auth_token(sender, instance=None, created=False, **kwargs):
     if created:
         Token.objects.create(user=instance)
+
+
+class Address(models.Model):
+    customer = models.ForeignKey(User,on_delete=models.CASCADE)
+    line1 = models.TextField()
+    line2 = models.TextField(blank=True, null=True)
+    city = models.CharField(max_length=100)
+    state = models.CharField(max_length=100)
+    country = models.CharField(max_length=100)
+    zipcode = models.PositiveIntegerField()
+
+    def __str__(self):
+        return self.customer.username + '- Address: ' + self.line1 + ' ...'
+
+

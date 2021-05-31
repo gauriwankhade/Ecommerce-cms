@@ -1,0 +1,67 @@
+
+HEY!!
+THIS IS REFERENCE DOC FOR THE PROJECT '50 DAYS OF CODE'
+
+
+* WHAT IT IS ABOUT?
+
+BASICALLY, IT IS A SET OF TASKS I HAVE DESIGNED TO BE COMPLETED IN 50 DAYS. IT INCLUDES LEARNING
+
+DATA STRUCTURES, DJANGO REST FRAMEWORK, JAVASCRIPT, AND CSS ALONG WITH ONE E-COMMERCE WEB
+
+APPLICATION.
+
+
+1) DRF: 
+
+Read DRF documentation very carefully, and try to cover each item in 'Topics' and 'API Guide'.
+
+________________________________________________________________________________________________
+
+
+2) DSA
+
+* Topics to be covered: 
+	1. String
+	2. Array
+	3. Stack
+	4. LinkedList
+	5. Tree
+	6. Recursion
+
+* Pick a topic for each week, and solve problems based on that topic only. 
+
+* Write blogs whenever necessary.
+
+* Participate in coding challenges. Platforms:- Codeforces, Leetcode.
+
+________________________________________________________________________________________________
+
+
+3) E-COMMERCE CMS (Single Vender)
+
+
+* Build secure, scalable E-commerce web application.
+
+* Write reference docs and/or blog for each section.
+
+* Update code on Github
+
+* Post blog update on LinkedIn
+
+________________________________________________________________________________________________
+
+
+4) CSS & JAVASCRIPT
+
+* Learn Javascript
+
+* Brush up, and learn new Css concepts.
+
+
+
+
+
+
+
+

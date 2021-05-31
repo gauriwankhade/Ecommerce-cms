@@ -1,8 +1,8 @@
 from rest_framework import viewsets, mixins
-from rest_framework.permissions import AllowAny
-from .models import User
+from rest_framework.permissions import AllowAny,IsAuthenticated
+from .models import *
 from .permissions import IsUserOrReadOnly
-from .serializers import CreateUserSerializer, UserSerializer
+from .serializers import *
 
 
 class UserViewSet(mixins.RetrieveModelMixin,
@@ -24,3 +24,16 @@ class UserCreateViewSet(mixins.CreateModelMixin,
     queryset = User.objects.all()
     serializer_class = CreateUserSerializer
     permission_classes = (AllowAny,)
+
+
+
+class AddressViewSet(mixins.CreateModelMixin,
+                    mixins.RetrieveModelMixin,
+                    mixins.UpdateModelMixin,
+                    viewsets.GenericViewSet):
+    """
+    Create, Update, Retrieve Address
+    """
+    queryset = Address.objects.all()
+    serializer_class = AddressSerializer
+    permission_classes = (IsAuthenticated,)
