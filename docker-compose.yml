@@ -3,6 +3,9 @@ version: '2'
 services:
   postgres:
     image: postgres:11.6
+    ports:
+      - "5430:5432"
+
   web:
     restart: always
     environment:
@@ -27,3 +30,4 @@ services:
       - ./:/code
     ports:
       - "8001:8001"
+   
