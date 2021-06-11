@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from rest_framework import permissions,viewsets
+from rest_framework import viewsets
 from .permissions import IsAdminOrReadOnly
 from .serializers import *
 from .models import *
@@ -16,6 +16,8 @@ class ProductViewSet(viewsets.ModelViewSet):
     queryset= Product.objects.all()
     serializer_class = ProductSerializer
     permission_classes = (IsAdminOrReadOnly, )
+   
+
 
 
 class ProductVariantViewSet(viewsets.ModelViewSet):
@@ -28,17 +30,20 @@ class ProductVariantImagesViewSet(viewsets.ModelViewSet):
     queryset= ProductVariantImages.objects.all()
     serializer_class = ProductVariantImagesSerializer
     permission_classes = (IsAdminOrReadOnly, )
+    
 
 
 class BrandViewSet(viewsets.ModelViewSet):
     queryset= Brand.objects.all()
     serializer_class = BrandSerializer
     permission_classes = (IsAdminOrReadOnly, )
+   
 
 class CategoryViewSet(viewsets.ModelViewSet):
     queryset= Category.objects.all()
     serializer_class = CategorySerializer
     permission_classes = (IsAdminOrReadOnly, )
+    
 
 
 

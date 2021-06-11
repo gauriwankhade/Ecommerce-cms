@@ -7,13 +7,13 @@ from .serializers import *
 
 class UserViewSet(mixins.RetrieveModelMixin,
                   mixins.UpdateModelMixin,
-                  viewsets.GenericViewSet):
+                  viewsets.GenericViewSet): 
     """
     Updates and retrieves user accounts
     """
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    permission_classes = (IsUserOrReadOnly,)
+    permission_classes = (IsUserOrReadOnly, )
 
 
 class UserCreateViewSet(mixins.CreateModelMixin,
@@ -23,7 +23,7 @@ class UserCreateViewSet(mixins.CreateModelMixin,
     """
     queryset = User.objects.all()
     serializer_class = CreateUserSerializer
-    permission_classes = (AllowAny,)
+    permission_classes = (AllowAny, )
 
 
 
@@ -36,4 +36,4 @@ class AddressViewSet(mixins.CreateModelMixin,
     """
     queryset = Address.objects.all()
     serializer_class = AddressSerializer
-    permission_classes = (IsAuthenticated,)
+    permission_classes = (IsUserOrReadOnly, )

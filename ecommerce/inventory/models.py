@@ -8,7 +8,7 @@ class Category(models.Model):
     category_name = models.CharField(max_length=255)
 
     def __str__(self):
-        return self.category_name
+        return self.category_name 
 
 class Brand(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)

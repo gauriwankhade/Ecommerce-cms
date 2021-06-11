@@ -23,6 +23,7 @@ def create_auth_token(sender, instance=None, created=False, **kwargs):
 
 
 class Address(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     customer = models.ForeignKey(User,on_delete=models.CASCADE)
     line1 = models.TextField()
     line2 = models.TextField(blank=True, null=True)
